@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.logo{
+    width: auto;
+    height: 40px;
+}
+.logo:hover{
+    cursor: pointer;
+}
+
+#navbar{
+    display: flex;
+    background-color: rgb(0, 0, 0, 0.8);
+    justify-content: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+#navbar .navbar-container{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+#navbar .navbar-container ul{
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+}
+#navbar .navbar-container ul li{
+    padding: 0 20px;
+    transition: all 500ms ease;
+}
+#navbar .navbar-container ul li:hover{
+    color: #14a848;
+    cursor: pointer;
+}
+#navbar .navbar-container ul li:nth-child(3) {
+    border-right: 1px solid white;
+}
+
+/* CORPO */ 
+
+#corpo{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: url(/imagens/showcase.webp) center center/cover;
+    background-color: rgb(0, 0, 0, 0.3);
+    background-blend-mode: color;
+}
+#corpo .corpo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#corpo .corpo-container h2{
+    font-size: 5rem;
+}
+#corpo .corpo-container p{
+    font-size: 1.1rem;
+    margin: 15px 0;
+}
+
+/* Utilidades de botões */ 
+.botao-primario{
+    background: #14a848;
+    color: white;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 30px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 500ms ease;
+}
+.botao-primario:hover{
+    cursor: pointer;
+    background: #42cc72;
+}
+
+/* FOOTER */ 
+
+#footer{
+    background: black;
+    color: white;
+    padding: 70px 0;
+}
+#footer .footer-container{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: space-between;
+}
+#footer .footer-container .footer-menu{
+    list-style: none;
+    margin: 0 60px;
+}
+#footer .footer-container .footer-menu .footer-menu-itens{
+    margin: 25px 0;
+    transition: all 500ms ease;
+}
+#footer .footer-container .footer-menu .footer-menu-itens:hover{
+    cursor: pointer;
+    color: #14a848;
+}
+#footer .footer-container .footer-menu p{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #919496;
+    font-size: 0.9rem;
+}
+
+/* SOCIAIS*/
+.sociais{
+    display: flex;
+}
+.sociais i{
+    margin: 0 20px;
+    font-size: 2rem;
+    transition: all 500ms ease;
+    height: 30px;
+}
+.sociais i:hover{
+    cursor: pointer;
+    color: #14a848;
+}
+
+
+/* FOOTER FINAL*/
+
+.footer-final{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 60%;
+    margin: auto;
+    font-weight: bold;
+    color: #919496;
+    font-size: 0.8rem;
+    padding-top: 50px ;
+}
+.footer-final .footer-itens-final{
+    display: flex;
+    list-style: none;
+    transition: all 300ms ease;
+}
+.footer-final .footer-itens-final .footer-itens-final{
+    margin: 0 10px; 
+}
+.footer-final .footer-itens-final .footer-itens-final:hover{
+    cursor: pointer;
+    color: #14a848;
+}
+.footer-final .direitos .país{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.footer-final .direitos .país .bandeira{
+    height: 15px;
+    width: auto;
+    display: inline-block;
+    margin-left: 10px;
+}
+.footer-final .direitos .país p{
+    transition: all 300ms ease;
+}
+.footer-final .direitos .país p:hover{
+    cursor: pointer;
+    color: #14a848;
+}
